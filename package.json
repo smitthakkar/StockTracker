@@ -1,0 +1,20 @@
+{
+  "name": "stockpricetracker",
+  "version": "1.0.0",
+  "description": "Stock Price Tracker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Smit Thakkar",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.7.5",
+    "sequelize": "^6.20.0",
+    "sqlite3": "^5.0.8"
+  }
+}
