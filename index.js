@@ -69,6 +69,9 @@ app.get('/api/prices/btc', async function (req, res) {
         where: {
             priceDate: date
         }
+    }).catch(err => {
+        console.error(err);
+        return 0;
     });
     const priceResponse = await Price.findAll({
         where: {
@@ -76,6 +79,9 @@ app.get('/api/prices/btc', async function (req, res) {
         },
         offset: offSet,
         limit: limit
+    }).catch(err => {
+        console.error(err);
+        return [];
     });
     let dataResponse = priceResponse.map(p => {
         return {
